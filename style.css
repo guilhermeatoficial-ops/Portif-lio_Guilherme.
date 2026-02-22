@@ -182,27 +182,7 @@ body {
   }
 }
 
-/* RESPONSIVO */
-@media (max-width: 600px) {
-  .lista-habilidades {
-    grid-template-columns: 1fr;
-  }
-
-  .titulo {
-    font-size: 2.2rem;
-  }
-  
-.container {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 0.6s ease;
-}
-
-.container.ativo {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+/* ANIMAÇÃO DE ENTRADA */
 .container {
   opacity: 0;
   transform: translateY(40px);
@@ -214,7 +194,15 @@ body {
   transform: translateY(0);
 }
 
-}
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .lista-habilidades {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo {
+    font-size: 2.2rem;
+  }
 
 /* SERVIÇOS */
 .lista-servicos {
